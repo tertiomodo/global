@@ -22,8 +22,8 @@
   }
 
   .content__right-woman-img {
-    max-width: 188px;
-    min-height: 393px;
+    max-width: 210px;
+    min-height: 384px;
   }
 
   .content__right-green-gb {
@@ -246,15 +246,6 @@
   .third-india-flag {
     top: 131px;
     left: -20px;
-  }
-  
-  .content__right-woman-img {
-    width: 100%;
-    max-width: 210px;
-    min-height: 384px;
-    position: absolute;
-    bottom: 0;
-    background: url('../../assets/img/woman.png') no-repeat center center / cover;
   }
 
   .header__list {
