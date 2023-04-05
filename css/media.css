@@ -1,0 +1,295 @@
+@media (max-width: 1380px) {
+  .content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .header__button {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 780px) {
+  .header {
+    margin: 30px 0 0 0;
+  }
+
+  .content__right {
+    max-width: 307px;
+    height: 450px;
+    left: 0;
+    overflow: hidden;
+  }
+
+  .content__right-woman-img {
+    max-width: 188px;
+    min-height: 393px;
+  }
+
+  .content__right-green-gb {
+    width: 150px;
+    height: 150px;
+    left: 75px;
+  }
+
+  .content__right-orbit {
+    width: 250px;
+    height: 250px;
+    top: 25px;
+    left: 25px;
+  }
+
+  .british-flag,
+  .italy-flag,
+  .second-italy-flag,
+  .india-flag,
+  .second-india-flag,
+  .third-india-flag {
+    width: 50px;
+    height: 50px;
+  }
+
+  .header__nav {
+    position: absolute;
+    top: 85px;
+    right: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0;
+    z-index: 10;
+  }
+
+  @keyframes showBritishFlag {
+    0% {
+      top: 126px;
+      left: 96px;
+    }
+  
+    25% {
+      top: 124px;
+      left: 48px;
+    }
+  
+    50% {
+      top: 97px;
+      left: 23px;
+    }
+  
+    75% {
+      top: 68px;
+      left: 4px;
+    }
+  
+    100% {
+      top: 32px;
+      left: -9px;
+    }
+  }
+  
+  @keyframes showFirstItalyFlag {
+    0% {
+      top: 126px;
+      left: 96px;
+    }
+  
+    25% {
+      top: 76px;
+      left: 79px;
+    }
+  
+    50% {
+      top: 23px;
+      left: 85px;
+    }
+  
+    75% {
+      top: 4px;
+      left: 98px;
+    }
+  
+    100% {
+      top: -24px;
+      left: 117px;
+    }
+  }
+  
+  @keyframes showSecondItalyFlag {
+    0% {
+      top: 126px;
+      left: 96px;
+    }
+  
+    100% {
+      top: 223px;
+      left: 72px;
+    }
+  }
+  
+  @keyframes showFirstIndiaFlag {
+    0% {
+      top: 126px;
+      left: 96px;
+    }
+  
+    25% {
+      top: 67px;
+      left: 102px;
+    }
+  
+    50% {
+      top: 48px;
+      left: 148px;
+    }
+  
+    75% {
+      top: 55px;
+      left: 183px;
+    }
+  
+    100% {
+      top: 55px;
+      left: 211px;
+    }
+  }
+  
+  @keyframes showSecondIndiaFlag {
+    0% {
+      top: 126px;
+      left: 96px;
+    }
+  
+    25% {
+      top: 103px;
+      left: 144px;
+    }
+  
+    50% {
+      top: 123px;
+      left: 189px;
+    }
+  
+    75% {
+      top: 151px;
+      left: 196px;
+    }
+  
+    100% {
+      top: 174px;
+      left: 196px;
+    }
+  }
+  
+  @keyframes showThirdIndiaFlag {
+    0% {
+      top: 126px;
+      left: 96px;
+    }
+  
+    25% {
+      top: 149px;
+      left: 77px;
+    }
+  
+    50% {
+      top: 143px;
+      left: 30px;
+    }
+  
+    75% {
+      top: 135px;
+      left: 6px;
+    }
+  
+    100% {
+      top: 131px;
+      left: -20px;
+    }
+  }
+
+  @keyframes openMenu {
+    0% {
+      height: 0;
+    }
+
+    100% {
+      height: 174px;
+      padding: 20px 20px;
+    }
+  }
+
+  .british-flag {
+    top: 32px;
+    left: -9px;
+  }
+  
+  .italy-flag {
+    top: -24px;
+    left: 117px;
+  }
+  
+  .second-italy-flag {
+    top: 223px;
+    left: 72px;
+  }
+  
+  .india-flag {
+    top: 55px;
+    left: 211px;
+  }
+  
+  .second-india-flag {
+    top: 174px;
+    left: 196px;
+  }
+  
+  .third-india-flag {
+    top: 131px;
+    left: -20px;
+  }
+  
+  .content__right-woman-img {
+    width: 100%;
+    max-width: 210px;
+    min-height: 384px;
+    position: absolute;
+    bottom: 0;
+    background: url('../../assets/img/woman.png') no-repeat center center / cover;
+  }
+
+  .header__list {
+    height: 0;
+    width: 153px;
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 20px;
+    overflow: hidden;
+    background-color: var(--white);
+    border-radius: 0 0 20px 20px;
+  }
+
+  .open-menu {
+    animation: openMenu 0.5s normal linear 1 forwards;
+  }
+
+  .header__mobile-btn {
+    width: 108px;
+    height: 42px;
+    display: block;
+    padding: 9px 31px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--white);
+    background-color: var(--green);
+    border-radius: 20px;
+  }
+
+  .header__mobile-btn-add {
+    width: 153px;
+    color: var(--dark-gray);
+    background-color: var(--white);
+    border-radius: 20px 20px 0 0;
+  }
+}
+
