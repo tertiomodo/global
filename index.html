@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="./js/flag.js"></script>
+  <script defer src="./js/description.js"></script>
+  <script defer src="./js/input.js"></script>
+  <script defer src="./js/mobile-menu.js"></script>
   <link rel="stylesheet" href="css/main.css">
   <link rel="icon" href="./assets/svg/icon.ico">
   <title>Global</title>
@@ -19,6 +23,7 @@
         </svg>          
       </a>
       <nav class="header__nav">
+        <button class="header__mobile-btn">Menu</button>
         <ul class="header__list">
           <li class="header__item">
             <a class="header__link" href="#">Mobile Top Up</a>
@@ -44,12 +49,10 @@
         <h2 class="content__title-descr">
           With Bank Transfer
         </h2>
-        <p class="content__descr">
-          We Make international calling simple, relible, and cheap basedon your unique calling behavior.
-        </p>
+        <p class="content__descr"></p>
         <button class="content__start-btn">Get Started</button>
         <form class="content__form" action="#">
-          <input class="content__input" type="search" placeholder="Where do you want to call?">
+          <input class="content__input" maxlength="12" minlength="4" type="search" placeholder="Where do you want to call?">
           <button class="content__search-btn">
             <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12.4267 20.9866C17.1518 20.9866 20.9822 17.1561 20.9822 12.431C20.9822 7.70594 17.1518 3.87549 12.4267 3.87549C7.70155 3.87549 3.87109 7.70594 3.87109 12.431C3.87109 17.1561 7.70155 20.9866 12.4267 20.9866Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -71,9 +74,12 @@
       </div>
       <div class="content__right">
         <div class="content__right-orbit">
-          <div class="content__right-flag british-flag"></div>
-          <div class="content__right-flag italy-flag"></div>
-          <div class="content__right-flag india-flag"></div>
+          <div class="british-flag"></div>
+          <div class="italy-flag"></div>
+          <div class="india-flag"></div>
+          <div class="second-india-flag"></div>
+          <div class="second-italy-flag"></div>
+          <div class="third-india-flag"></div>
         </div>
         <div class="content__right-green-gb"></div>
         <div class="content__right-woman-img"></div>
