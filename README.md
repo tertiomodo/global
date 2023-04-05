@@ -8,7 +8,7 @@
   <li>CSS</li>
   <li>JavaScript</li>
 </ul>
-<h2>Общий вид проекта</h2>
+<h2>Общий вид проекта, desktop/mobile</h2>
 <div>
   <img src="assets\img\readme-img\desktop.png">
   <img src="assets\img\readme-img\mobile.png">
