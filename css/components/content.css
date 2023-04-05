@@ -4,6 +4,8 @@
 }
 
 .content__left {
+  width: 100%;
+  max-width: 597px;
   margin-left: 3px;
 }
 
@@ -28,11 +30,23 @@
 
 .content__descr {
   max-width: 444px;
+  max-height: 100px;
   margin-bottom: 30px;
   font-weight: 500;
   font-size: 15px;
   line-height: 26px;
+  overflow-y: scroll;
   color: var(--light-gray);
+}
+
+.content__descr::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+.content__descr::-webkit-scrollbar-thumb {
+  background-color: var(--green);
+  border-radius: 5px;
 }
 
 .content__start-btn {
@@ -60,8 +74,9 @@
 }
 
 .content__input {
-  width: 597px;
-  height: 62px;
+  width: 100%;
+  max-width: 597px;
+  min-height: 62px;
   padding: 21px 80px 22px 40px;
   background: var(--white);
   box-shadow: 0px 20px 30px rgba(222, 222, 222, 0.25);
@@ -151,6 +166,8 @@
 
 .content__right {
   width: 100%;
+  max-width: 574px;
+  height: 567px;
   position: relative;
   left: 18px;
   display: flex;
@@ -173,21 +190,275 @@
   position: absolute;
   top: -35px;
   left: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 2px solid #E8E8E8;
   border-radius: 100%;
+}
+
+@keyframes showBritishFlag {
+  0% {
+    top: 213px;
+    left: 187px
+  }
+
+  25% {
+    top: 191px;
+    left: 52px;
+  }
+
+  50% {
+    top: 163px;
+    left: 12px;
+  }
+
+  75% {
+    top: 126px;
+    left: -3px;
+  }
+
+  100% {
+    top: 77px;
+    left: -12px;
+  }
+}
+
+@keyframes showFirstItalyFlag {
+  0% {
+    top: 213px;
+    left: 187px
+  }
+
+  25% {
+    top: 126px;
+    left: 150px;
+  }
+
+  50% {
+    top: 74px;
+    left: 159px;
+  }
+
+  75% {
+    top: 16px;
+    left: 182px;
+  }
+
+  100% {
+    top: -30px;
+    left: 215px;
+  }
+}
+
+@keyframes showSecondItalyFlag {
+  0% {
+    top: 213px;
+    left: 187px
+  }
+
+  100% {
+    top: 416px;
+    left: 215px;
+  }
+}
+
+@keyframes showFirstIndiaFlag {
+  0% {
+    top: 213px;
+    left: 187px
+  }
+
+  25% {
+    top: 131px;
+    left: 237px;
+  }
+
+  50% {
+    top: 81px;
+    left: 292px;
+  }
+
+  75% {
+    top: 84px;
+    left: 345px;
+  }
+
+  100% {
+    top: 89px;
+    left: 387px;
+  }
+}
+
+@keyframes showSecondIndiaFlag {
+  0% {
+    top: 213px;
+    left: 187px
+  }
+
+  25% {
+    top: 212px;
+    left: 326px;
+  }
+
+  50% {
+    top: 232px;
+    left: 378px;
+  }
+
+  75% {
+    top: 238px;
+    left: 399px;
+  }
+
+  100% {
+    top: 251px;
+    left: 423px;
+  }
+}
+
+@keyframes showThirdIndiaFlag {
+  0% {
+    top: 213px;
+    left: 187px
+  }
+
+  25% {
+    top: 307px;
+    left: 110px;
+  }
+
+  50% {
+    top: 298px;
+    left: 60px;
+  }
+
+  75% {
+    top: 286px;
+    left: 27px;
+  }
+
+  100% {
+    top: 251px;
+    left: -16px;
+  }
+}
+
+@keyframes rotateOrbit {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes flagRotate {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.show-british-flag {
+  animation: showBritishFlag 1s normal linear 1 forwards;
+}
+
+.show-first-italy-flag {
+  animation: showFirstItalyFlag 1s normal linear 1 forwards;
+}
+
+.show-second-italy-flag {
+  animation: showSecondItalyFlag 1s normal linear 1 forwards;
+}
+
+.show-first-india-flag {
+  animation: showFirstIndiaFlag 1s normal linear 1 forwards;
+}
+
+.show-second-india-flag {
+  animation: showSecondIndiaFlag 1s normal linear 1 forwards;
+}
+
+.show-third-india-flag {
+  animation: showThirdIndiaFlag 1s normal linear 1 forwards;
+}
+
+.rotate-orbit {
+  animation: rotateOrbit 10s normal linear infinite;
+}
+
+.flag-rotate {
+  animation: flagRotate 10s normal linear infinite;
 }
 
 .british-flag {
   width: 80px;
   height: 80px;
-  transform: translate(-12px, 76px);
+  position: absolute;
+  top: 77px;
+  left: -12px;
   background: url('../../assets/img/british-flag.png') no-repeat center center / cover;
 }
 
+.italy-flag {
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  top: -30px;
+  left: 215px;
+  background: url('../../assets/img/italy-flag.png') no-repeat center center / cover;
+}
+
+.second-italy-flag {
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  top: 416px;
+  left: 215px;
+  background: url('../../assets/img/italy-flag.png') no-repeat center center / cover;
+}
+
+.india-flag {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: 89px;
+  left: 387px;
+  background: url('../../assets/img/india-flag.png') no-repeat center center / cover;
+}
+
+.second-india-flag {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 251px;
+  left: 423px;
+  background: url('../../assets/img/india-flag.png') no-repeat center center / cover;
+}
+
+.third-india-flag {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 251px;
+  left: -16px;
+  background: url('../../assets/img/india-flag.png') no-repeat center center / cover;
+}
+
 .content__right-woman-img {
-  width: 315px;
-  height: 557px;
+  width: 100%;
+  max-width: 315px;
+  min-height: 557px;
   position: absolute;
   bottom: 0;
   background: url('../../assets/img/woman.png') no-repeat center center / cover;
+}
+
+.hide {
+  opacity: 0;
 }
